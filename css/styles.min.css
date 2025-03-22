@@ -883,7 +883,7 @@ img {
 
 .statistic-number {
     font-family: Inter, sans-serif;
-    font-size: 65px;
+    font-size: 50px;
     font-weight: 500;
     line-height: .9em
 }
@@ -930,7 +930,7 @@ img {
         padding-bottom: 130px
     }
     .big-text-about {
-        font-size: 45px
+        font-size: 40px;
     }
     .statistics-wrap {
         margin-top: 50px
@@ -1058,7 +1058,7 @@ img {
 
 h2.uppercase {
     color: #fff0;
-    font-size: 7vw;
+    font-size: 5vw;
     -webkit-text-stroke-width: 2px;
     stroke-width: 2px;
     -webkit-text-stroke-color: #FCFCFC;
@@ -1102,7 +1102,7 @@ h2.uppercase.text-left {
 }
 
 .font-desktop {
-    font-size: 17px
+    font-size: 15px;
 }
 
 .banner-logo {
@@ -1327,7 +1327,7 @@ h2.uppercase.text-left {
 }
 
 #investors {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     padding-top: 0
 }
 
@@ -1465,6 +1465,9 @@ textarea {
 }
 
 @media (min-width:1025px) {
+    .investors-section {
+        transform: scale(0.9);
+    }
     .why-attend-section {
         box-shadow: 0 0 20px 6px #000;
         border-top: 1px solid #393939
@@ -1529,11 +1532,11 @@ textarea {
 
 @media screen and (min-width:1280px) {
     .list-items-wrap {
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
         flex-flow: column;
         max-width: 520px;
-        margin-top: 60px;
+        /* margin-top: 60px; */
         display: flex
     }
 }
@@ -1544,7 +1547,7 @@ textarea {
     background-color: var(--light-grey);
     border: 1px solid #f15c45;
     border-radius: 20px;
-    padding: 30px;
+    padding: 20px 30px;
     display: flex
 }
 
@@ -1571,23 +1574,23 @@ textarea {
 .big-text-number.red {
     color: #f15c45;
     font-family: Inter, sans-serif;
-    font-size: 50px;
+    font-size: 44px;
     line-height: 1.1em
 }
 
 .max-width-heading {
     color: #fff;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     font-family: Inter, sans-serif;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
     line-height: 1.2em
 }
 
 @media screen and (min-width:1280px) {
     .max-width-heading {
-        max-width: 270px
+        max-width: 370px;
     }
 }
 
@@ -1601,7 +1604,8 @@ textarea {
         width: 50%;
         top: 120px;
         max-width: 520px;
-        transition: top 0.3s ease-in-out
+        transition: top 0.3s ease-in-out;
+        margin-top: 40px;
     }
 }
 
@@ -1609,7 +1613,7 @@ textarea {
     z-index: 10;
     width: 280px !important;
     position: absolute;
-    top: 0;
+    top: 100px;
     right: 0;
     box-shadow: 0 2px 15px #0000000d;
     max-height: 190px;
@@ -1622,7 +1626,7 @@ textarea {
     width: 200px !important;
     border-radius: 10px;
     position: absolute;
-    inset: auto auto 0% 0%;
+    inset: auto auto -6% 0%;
     box-shadow: 0 2px 15px #0000000d
 }
 
@@ -1652,7 +1656,7 @@ image.feature-call-to-action {
     .rounded-image.feature-call-to-action {
         width: 80% !important;
         height: auto;
-        margin-top: 80px
+        margin-top: 100px;
     }
 }
 
@@ -1891,7 +1895,9 @@ image.feature-call-to-action {
     }
     .accordion-head p {
         font-size: 16px;
-        line-height: 1.2
+        line-height: 1.2;
+        padding-right: 0;
+        max-width: 250px;
     }
     #investors {
         padding-top: 60px;
@@ -2056,7 +2062,7 @@ image.feature-call-to-action {
         width: 88% !important;
         left: auto !important;
         right: auto !important;
-        margin: auto
+        margin: 80px auto 0px;
     }
     .half-section-block {
         width: 100%
@@ -2075,14 +2081,16 @@ image.feature-call-to-action {
     .rounded-image.feature,
     .rounded-image.feature-call-to-action {
         height: auto;
-        margin: 130px 0 100px 30px;
+        margin: 100px 0 70px 30px;
         width: 80%
     }
     .chart-image-top {
-        width: 180px !important
+        width: 180px !important;
+        top: 123px;
     }
     .chart-image {
-        width: 160px !important
+        width: 160px !important;
+        inset: auto auto 3% 0%;
     }
 }
 
@@ -2135,7 +2143,7 @@ image.feature-call-to-action {
 
 .show-items .list-items-wrap-item:nth-child(n+2) {
     border: 1px solid #f15c45;
-    padding: 30px
+    padding: 20px 30px;
 }
 
 @media (min-width:1025px) {
@@ -2145,6 +2153,9 @@ image.feature-call-to-action {
     }
     .read-more-btn {
         display: none
+    }
+    .section-investors .bg-investors {
+        padding: 0px 0;
     }
 }
 
