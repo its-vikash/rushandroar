@@ -5,20 +5,18 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="theme-color" content="#25678a" />
   <title>Rush & Roar Show</title>
-  <meta name="description" content="" />
+  <meta name="description" content="The International Automotive Culture Festival (IACF) proudly presents the Rush & Roar Show, an exhilarating platform for automotive enthusiasts, industry leaders, and brands to come together and celebrate the passion for cars, bikes, and innovations." />
   <link rel="icon" href="./images/favicon.png" sizes="32x32" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
-  <style id="wp-emoji-styles-inline-css" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style type="text/css">
     .logo-svg {
       max-width: 234px;
       padding-top: 3px;
     }
-
     .corner-bg {
       position: fixed;
       right: auto;
@@ -27,12 +25,10 @@
       transform: rotateY(180deg);
       z-index: 20;
     }
-
     .wrap-img-pin img {
       max-height: 800px;
       object-fit: cover;
     }
-
     .firework-bg {
       position: absolute;
       transform: rotate(85deg);
@@ -42,17 +38,15 @@
       opacity: 0.4;
     }
     .viewers-bg {
-        position: absolute;
-        left: auto;
-        right: 8%;
-        bottom: 10%;
-        max-width: 500px;
+      position: absolute;
+      left: auto;
+      right: 14%;
+      bottom: 11%;
+      max-width: 380px;
     }
-
     .container-xxl {
       padding: 100px 0 0;
     }
-
     .container-xxl .row {
       --bs-gutter-x: 1.5rem;
       --bs-gutter-y: 0;
@@ -63,7 +57,6 @@
       margin-left: calc(var(--bs-gutter-x) / -2);
       position: relative;
     }
-
     .container-xxl .row>* {
       flex-shrink: 0;
       width: 100%;
@@ -72,14 +65,12 @@
       padding-left: calc(var(--bs-gutter-x) / 2);
       margin-top: var(--bs-gutter-y);
     }
-
     @media (min-width: 992px) {
       .container-xxl .col-lg-4 {
         flex: 0 0 auto;
         width: 33.33333%;
       }
     }
-
     .container-xxl .nav {
       display: flex;
       flex-wrap: wrap;
@@ -87,7 +78,6 @@
       margin-bottom: 0;
       list-style: none;
     }
-
     .container-xxl .nav-link {
       display: block;
       padding: 0.5rem 1rem;
@@ -96,98 +86,78 @@
         border-color 0.15sease-in-out;
       align-items: center !important;
     }
-
     .container-xxl .d-flex {
       display: flex !important;
     }
-
     .container-xxl .nav-pills .nav-link {
       background: none;
       border: 0;
       border-radius: 0px;
     }
-
     .service .nav .nav-link {
       background: #ffff;
       transition: 0.5s;
       color: #000000;
     }
-
     .container-xxl .nav-pills .nav-link.active,
     .container-xxl .nav-pills .show>.nav-link {
       color: #000000;
       background-color: #beaa7e;
     }
-
     .container-xxl .w-100 {
       width: 100% !important;
     }
-
     .container-xxl .me-3 {
       margin-right: 1rem !important;
     }
-
     @media (min-width: 992px) {
       .container-xxl .col-lg-8 {
         flex: 0 0 auto;
         width: 66.66667%;
       }
     }
-
     .fade {
-      transition: opacity 0.15slinear;
+      transition: opacity 0.15s linear;
     }
-
     .fade:not(.show) {
       opacity: 0;
     }
-
     .container-xxl .tab-content>.tab-pane {
       display: none;
     }
-
     @media (min-width: 1025px) {
       .container-xxl .col-md-6 {
         flex: 0 0 auto;
         width: 50%;
       }
     }
-
     .h-100 {
       height: 100% !important;
     }
-
     .position-relative {
       position: relative !important;
     }
-
     .position-absolute {
       position: absolute !important;
     }
-
     .container-xxl .tab-content>.active {
       display: block;
     }
-
     .p-4 {
       padding: 1.5rem !important;
     }
-
     .mb-3 {
       margin-bottom: 1rem !important;
     }
-
     .container-xxl h3 {
       font-size: 1.75rem;
       font-weight: 700;
       line-height: 1.2;
       color: #fff;
     }
-
     .mb-4 {
       margin-bottom: 1.5rem !important;
     }
-
     .container-xxl .container p {
       margin-top: 0;
       margin-bottom: 1rem;
@@ -206,7 +176,6 @@
       background-color: #000000;
       z-index: 999;
     }
-
     #loading span {
       position: relative;
       overflow: hidden;
@@ -215,11 +184,9 @@
       display: flex;
       justify-content: center;
     }
-
     #loading img {
       max-width: 300px;
     }
-
     #loading span::before {
       content: "";
       position: absolute;
@@ -232,7 +199,6 @@
       animation: move 3s linear infinite;
       z-index: 1;
     }
-
     @keyframes move {
       0% {
         left: -160px;
@@ -246,17 +212,14 @@
         left: 100%;
       }
     }
-
     .bg-main {
       background-size: contain !important;
       background-repeat: no-repeat !important;
       background-position: -2px 0 !important;
     }
-
     .video-intro {
       position: relative;
     }
-
     #muteButton {
       position: absolute;
       top: auto;
@@ -270,395 +233,17 @@
       bottom: 11%;
       right: calc(30px + 2.875rem);
     }
-
     #muteButton:hover {
       background: rgba(0, 0, 0, 0.9);
     }
-
     .icon {
       width: 24px;
       height: 24px;
       fill: white;
     }
   </style>
-  <style id="classic-theme-styles-inline-css" type="text/css">
-    .wp-block-button__link {
-      color: #fff;
-      background-color: #32373c;
-      border-radius: 9999px;
-      box-shadow: none;
-      text-decoration: none;
-      padding: calc(0.667em + 2px) calc(1.333em + 2px);
-      font-size: 1.125em;
-    }
-
-    .wp-block-file__button {
-      background: #32373c;
-      color: #fff;
-      text-decoration: none;
-    }
-  </style>
-  <style id="global-styles-inline-css" type="text/css">
-    :root {
-      --wp--preset--aspect-ratio--square: 1;
-      --wp--preset--aspect-ratio--4-3: 4/3;
-      --wp--preset--aspect-ratio--3-4: 3/4;
-      --wp--preset--aspect-ratio--3-2: 3/2;
-      --wp--preset--aspect-ratio--2-3: 2/3;
-      --wp--preset--aspect-ratio--16-9: 16/9;
-      --wp--preset--aspect-ratio--9-16: 9/16;
-      --wp--preset--color--black: #000000;
-      --wp--preset--color--cyan-bluish-gray: #abb8c3;
-      --wp--preset--color--white: #ffffff;
-      --wp--preset--color--pale-pink: #f78da7;
-      --wp--preset--color--vivid-red: #cf2e2e;
-      --wp--preset--color--luminous-vivid-orange: #ff6900;
-      --wp--preset--color--luminous-vivid-amber: #fcb900;
-      --wp--preset--color--light-green-cyan: #7bdcb5;
-      --wp--preset--color--vivid-green-cyan: #00d084;
-      --wp--preset--color--pale-cyan-blue: #8ed1fc;
-      --wp--preset--color--vivid-cyan-blue: #0693e3;
-      --wp--preset--color--vivid-purple: #9b51e0;
-      --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,
-          rgba(6, 147, 227, 1) 0%,
-          rgb(155, 81, 224) 100%);
-      --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,
-          rgb(122, 220, 180) 0%,
-          rgb(0, 208, 130) 100%);
-      --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,
-          rgba(252, 185, 0, 1) 0%,
-          rgba(255, 105, 0, 1) 100%);
-      --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,
-          rgba(255, 105, 0, 1) 0%,
-          rgb(207, 46, 46) 100%);
-      --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,
-          rgb(238, 238, 238) 0%,
-          rgb(169, 184, 195) 100%);
-      --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,
-          rgb(74, 234, 220) 0%,
-          rgb(151, 120, 209) 20%,
-          rgb(207, 42, 186) 40%,
-          rgb(238, 44, 130) 60%,
-          rgb(251, 105, 98) 80%,
-          rgb(254, 248, 76) 100%);
-      --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,
-          rgb(255, 206, 236) 0%,
-          rgb(152, 150, 240) 100%);
-      --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,
-          rgb(254, 205, 165) 0%,
-          rgb(254, 45, 45) 50%,
-          rgb(107, 0, 62) 100%);
-      --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,
-          rgb(255, 203, 112) 0%,
-          rgb(199, 81, 192) 50%,
-          rgb(65, 88, 208) 100%);
-      --wp--preset--gradient--pale-ocean: linear-gradient(135deg,
-          rgb(255, 245, 203) 0%,
-          rgb(182, 227, 212) 50%,
-          rgb(51, 167, 181) 100%);
-      --wp--preset--gradient--electric-grass: linear-gradient(135deg,
-          rgb(202, 248, 128) 0%,
-          rgb(113, 206, 126) 100%);
-      --wp--preset--gradient--midnight: linear-gradient(135deg,
-          rgb(2, 3, 129) 0%,
-          rgb(40, 116, 252) 100%);
-      --wp--preset--font-size--small: 13px;
-      --wp--preset--font-size--medium: 20px;
-      --wp--preset--font-size--large: 36px;
-      --wp--preset--font-size--x-large: 42px;
-      --wp--preset--spacing--20: 0.44rem;
-      --wp--preset--spacing--30: 0.67rem;
-      --wp--preset--spacing--40: 1rem;
-      --wp--preset--spacing--50: 1.5rem;
-      --wp--preset--spacing--60: 2.25rem;
-      --wp--preset--spacing--70: 3.38rem;
-      --wp--preset--spacing--80: 5.06rem;
-      --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
-      --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
-      --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
-      --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
-        6px 6px rgba(0, 0, 0, 1);
-      --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
-    }
-
-    :where(.is-layout-flex) {
-      gap: 0.5em;
-    }
-
-    :where(.is-layout-grid) {
-      gap: 0.5em;
-    }
-
-    body .is-layout-flex {
-      display: flex;
-    }
-
-    .is-layout-flex {
-      flex-wrap: wrap;
-      align-items: center;
-    }
-
-    .is-layout-flex> :is(*, div) {
-      margin: 0;
-    }
-
-    body .is-layout-grid {
-      display: grid;
-    }
-
-    .is-layout-grid> :is(*, div) {
-      margin: 0;
-    }
-
-    :where(.wp-block-columns.is-layout-flex) {
-      gap: 2em;
-    }
-
-    :where(.wp-block-columns.is-layout-grid) {
-      gap: 2em;
-    }
-
-    :where(.wp-block-post-template.is-layout-flex) {
-      gap: 1.25em;
-    }
-
-    :where(.wp-block-post-template.is-layout-grid) {
-      gap: 1.25em;
-    }
-
-    .has-black-color {
-      color: var(--wp--preset--color--black) !important;
-    }
-
-    .has-cyan-bluish-gray-color {
-      color: var(--wp--preset--color--cyan-bluish-gray) !important;
-    }
-
-    .has-white-color {
-      color: var(--wp--preset--color--white) !important;
-    }
-
-    .has-pale-pink-color {
-      color: var(--wp--preset--color--pale-pink) !important;
-    }
-
-    .has-vivid-red-color {
-      color: var(--wp--preset--color--vivid-red) !important;
-    }
-
-    .has-luminous-vivid-orange-color {
-      color: var(--wp--preset--color--luminous-vivid-orange) !important;
-    }
-
-    .has-luminous-vivid-amber-color {
-      color: var(--wp--preset--color--luminous-vivid-amber) !important;
-    }
-
-    .has-light-green-cyan-color {
-      color: var(--wp--preset--color--light-green-cyan) !important;
-    }
-
-    .has-vivid-green-cyan-color {
-      color: var(--wp--preset--color--vivid-green-cyan) !important;
-    }
-
-    .has-pale-cyan-blue-color {
-      color: var(--wp--preset--color--pale-cyan-blue) !important;
-    }
-
-    .has-vivid-cyan-blue-color {
-      color: var(--wp--preset--color--vivid-cyan-blue) !important;
-    }
-
-    .has-vivid-purple-color {
-      color: var(--wp--preset--color--vivid-purple) !important;
-    }
-
-    .has-black-background-color {
-      background-color: var(--wp--preset--color--black) !important;
-    }
-
-    .has-cyan-bluish-gray-background-color {
-      background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
-    }
-
-    .has-white-background-color {
-      background-color: var(--wp--preset--color--white) !important;
-    }
-
-    .has-pale-pink-background-color {
-      background-color: var(--wp--preset--color--pale-pink) !important;
-    }
-
-    .has-vivid-red-background-color {
-      background-color: var(--wp--preset--color--vivid-red) !important;
-    }
-
-    .has-luminous-vivid-orange-background-color {
-      background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
-    }
-
-    .has-luminous-vivid-amber-background-color {
-      background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
-    }
-
-    .has-light-green-cyan-background-color {
-      background-color: var(--wp--preset--color--light-green-cyan) !important;
-    }
-
-    .has-vivid-green-cyan-background-color {
-      background-color: var(--wp--preset--color--vivid-green-cyan) !important;
-    }
-
-    .has-pale-cyan-blue-background-color {
-      background-color: var(--wp--preset--color--pale-cyan-blue) !important;
-    }
-
-    .has-vivid-cyan-blue-background-color {
-      background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
-    }
-
-    .has-vivid-purple-background-color {
-      background-color: var(--wp--preset--color--vivid-purple) !important;
-    }
-
-    .has-black-border-color {
-      border-color: var(--wp--preset--color--black) !important;
-    }
-
-    .has-cyan-bluish-gray-border-color {
-      border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
-    }
-
-    .has-white-border-color {
-      border-color: var(--wp--preset--color--white) !important;
-    }
-
-    .has-pale-pink-border-color {
-      border-color: var(--wp--preset--color--pale-pink) !important;
-    }
-
-    .has-vivid-red-border-color {
-      border-color: var(--wp--preset--color--vivid-red) !important;
-    }
-
-    .has-luminous-vivid-orange-border-color {
-      border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
-    }
-
-    .has-luminous-vivid-amber-border-color {
-      border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
-    }
-
-    .has-light-green-cyan-border-color {
-      border-color: var(--wp--preset--color--light-green-cyan) !important;
-    }
-
-    .has-vivid-green-cyan-border-color {
-      border-color: var(--wp--preset--color--vivid-green-cyan) !important;
-    }
-
-    .has-pale-cyan-blue-border-color {
-      border-color: var(--wp--preset--color--pale-cyan-blue) !important;
-    }
-
-    .has-vivid-cyan-blue-border-color {
-      border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
-    }
-
-    .has-vivid-purple-border-color {
-      border-color: var(--wp--preset--color--vivid-purple) !important;
-    }
-
-    .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
-      background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
-    }
-
-    .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
-      background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
-    }
-
-    .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
-      background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
-    }
-
-    .has-luminous-vivid-orange-to-vivid-red-gradient-background {
-      background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
-    }
-
-    .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
-      background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
-    }
-
-    .has-cool-to-warm-spectrum-gradient-background {
-      background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
-    }
-
-    .has-blush-light-purple-gradient-background {
-      background: var(--wp--preset--gradient--blush-light-purple) !important;
-    }
-
-    .has-blush-bordeaux-gradient-background {
-      background: var(--wp--preset--gradient--blush-bordeaux) !important;
-    }
-
-    .has-luminous-dusk-gradient-background {
-      background: var(--wp--preset--gradient--luminous-dusk) !important;
-    }
-
-    .has-pale-ocean-gradient-background {
-      background: var(--wp--preset--gradient--pale-ocean) !important;
-    }
-
-    .has-electric-grass-gradient-background {
-      background: var(--wp--preset--gradient--electric-grass) !important;
-    }
-
-    .has-midnight-gradient-background {
-      background: var(--wp--preset--gradient--midnight) !important;
-    }
-
-    .has-small-font-size {
-      font-size: var(--wp--preset--font-size--small) !important;
-    }
-
-    .has-medium-font-size {
-      font-size: var(--wp--preset--font-size--medium) !important;
-    }
-
-    .has-large-font-size {
-      font-size: var(--wp--preset--font-size--large) !important;
-    }
-
-    .has-x-large-font-size {
-      font-size: var(--wp--preset--font-size--x-large) !important;
-    }
-
-    :where(.wp-block-post-template.is-layout-flex) {
-      gap: 1.25em;
-    }
-
-    :where(.wp-block-post-template.is-layout-grid) {
-      gap: 1.25em;
-    }
-
-    :where(.wp-block-columns.is-layout-flex) {
-      gap: 2em;
-    }
-
-    :where(.wp-block-columns.is-layout-grid) {
-      gap: 2em;
-    }
-
-    :root :where(.wp-block-pullquote) {
-      font-size: 1.5em;
-      line-height: 1.6;
-    }
-  </style>
-  <link rel="stylesheet" id="swiper-css-css" href="./css/swiper.main.css" type="text/css" media="" />
   <link rel="stylesheet" id="main-css-css" href="./css/main.min.css" type="text/css" media="" />
   <link rel="stylesheet" href="./css/styles.min.css" type="text/css" />
-  <!-- <script src="./js/tailwindcss.16"></script> -->
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -672,7 +257,7 @@
     </span>
   </div>
   <div id="content">
-    <header style="background-color: rgba(0 0 0 / 80%)">
+    <header style="background-color: rgba(0 0 0 / 80%)" data-aos="fade-down">
       <div class="px-[1.625rem] lg:px-[2.875rem]">
         <div class="flex justify-center items-center lg:justify-between">
           <div class="lg:gap-8 lg:gap-12 w-1/3 hidden lg:flex">
@@ -710,21 +295,7 @@
         <a href="#unique-selling-points">Unique Selling Points</a>
         <a href="#investors">Why Sponsor?</a>
         <a href="javascript:void(0)" class="mobile-form-trigger">Get in touch</a>
-      </div>
-      <!-- <div class="text-[14px] space-y-5">
-        <div class="space-y-3 item-menu">
-          <p class="font-medium">Contact Details</p>
-          <a class="underline underline-offset-[6px] hover:text-primary" href="mailto:Email@rush&roar.com">
-            Email@rush&roar.com
-          </a>
-        </div>
-        <div class="space-y-3 item-menu">
-          <p class="font-medium">URGENT HELP</p>
-          <a class="link-underline" href="tel:+91 987 654 3210">
-            +91 987 654 3210
-          </a>
-        </div>
-      </div> -->      
+      </div>    
       <div class="flex gap-3 item-menu">
         <a class="cursor-pointer" href="https://www.instagram.com/rushandroar?igsh=MXJ1bDRsaTQzN3E3cQ%3D%3D&utm_source=qr" target="_blank">
           <i class="fab fa-instagram fa-2x"></i>
@@ -734,7 +305,6 @@
         </a>
       </div>
     </div>
-
     <div class="wrapper" id="overview">
       <section class="panel section-intro">
         <div class="m-panel">
@@ -755,13 +325,13 @@
               </video>
             </div>
             <div class="w-layout-blockcontainer base-container w-container">
-              <img class="image-small-right" src="./images/manequin.png" alt="Team Member" style="opacity: 0"
+              <img class="image-small-right" src="./images/manequin.png" alt="Team Member"
                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 120px, (max-width: 1279px) 140px, 250px"
-                data-w-id="4637bc2e-bdbb-8434-d0c9-6702a885c9ea" loading="lazy" />
+                data-aos="fade-up" data-aos-duration="1500"/>
                 <div class="typing-text-common">
                   <div class="typing-text1">One Track . Endless Stories . The New Era Begins</div>
                 </div>
-              <div class="home-1-banner-text-wrap">
+              <div class="home-1-banner-text-wrap" data-aos="fade-up">
                 <div class="banner-logo-wrap">
                   <img src="./images/logo.webp" alt="Rush & Roar Show" class="logo banner-logo" />
                 </div>
@@ -772,9 +342,8 @@
 
         <div class="m-panel">
           <div
-            class="overview fixed opacity-0 container lg:fixed z-20 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12 lg:pt-12 pb-9 lg:pb-0 lg:items-center h-[100vh]">
-            <div class="lg:col-span-2 lg:max-w-[700px] order-2 lg:order-1" data-w-id="0a4540fc-62e4-5ff4-eed2-6c440f095edd"
-              style="opacity: 0">
+            class="overview fixed container lg:fixed z-20 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12 lg:pt-12 pb-9 lg:pb-0 lg:items-center h-[100vh]">
+            <div class="lg:col-span-2 lg:max-w-[700px] order-2 lg:order-1" data-aos="fade-up">
               <h3 class="text-dark text-base lg:text-xl mb-4 text-justify">
                 The
                 <strong>International Automotive Culture Festival (IACF)</strong>
@@ -795,8 +364,7 @@
               </a>
               <a href="javascript:void(0)" class="form-open btn btn-primary text-[0.9rem] whitespace-nowrap btn-all flex lg:hidden">Get in touch</a>
             </div>
-            <div class="video-intro video-start block" data-w-id="95a064ac-d8a0-8c29-7156-5093887fa8ea"
-              style="opacity: 0">
+            <div class="video-intro video-start block" data-aos="fade-up">
               <div class="video-wrapper">
                 <video class="lazy video-move" id="myVideo" controls autoplay muted loop playsinline>
                   <source data-src="./video/car-race.mp4" type="video/mp4" />
@@ -810,85 +378,84 @@
       </section>
       <div class="wrap-feature-m relative why-attend-section">
         <div class="bg-features"></div>
-        <section id="why-attend" data-w-id="eb22c68a-e83c-ed8f-967a-7d88b849a1bd" class="section-one relative z-10 pb-[60px]">
+        <section id="why-attend" class="section-one relative z-10 lg:pt-[100px] pb-[60px]">
           <div class="w-layout-blockcontainer base-container w-container">
-            <div class="space-y-3 pt-[50px] lg:pt-[100px] pb-0 lg:pb-0">
-              <h2 data-w-id="3431c878-90b0-e5e2-e975-b67df5260b9b" style="opacity: 0"
-                class="h2 text-[28px] lg:text-5xl leading-[36px] lg:leading-[50px] uppercase">
-                Why Attend?
-              </h2>
-            </div>
-              <div class="flex-block-container">
-                  <div class="half-section-block">
-                      <div class="list-items-wrap">
-                          <div data-w-id="fcd85658-9f0b-b726-5dcd-b7063bd52339" style="opacity:0" class="list-items-wrap-item">
-                            <div class="item-content">
-                              <div class="big-text-number red">01</div>
-                                <div>
-                                    <h4 class="max-width-heading">Learn & Network</h4>
-                                    <p class="font-desktop text-white">
-                                      Discover the latest trends and innovations in the automotive
-                                      world through engaging workshops, interactive seminars, and
-                                      live demonstrations. Gain valuable insights into emerging
-                                      automotive technologies while having fun. <br />
-                                      Connect with designers, engineers, executives, and thought
-                                      leaders in the automotive industry. Build meaningful
-                                      relationships that could lead to mentorship, partnerships,
-                                      and business opportunities.
-                                    </p>
-                                </div>
-                              </div>
-                          </div>
-                          <div data-w-id="ee35233a-5959-91cf-4c72-34b629c2eb5e" style="opacity:0" class="list-items-wrap-item">
-                            <div class="item-content">
-                              <div class="big-text-number red">02</div>
-                              <div>
-                                  <h4 class="max-width-heading">Market & Interaction</h4>
-                                  <p class="font-desktop text-white">
-                                    Showcase your products and services to a targeted audience
-                                    of automotive enthusiasts, collectors, and buyers. With high
-                                    footfall and media visibility, this festival offers
-                                    unmatched brand promotion opportunities. <br />
-                                    Engage with a community of enthusiasts and professionals,
-                                    sharing experiences and ideas. Participate in interactive
-                                    sessions, panel discussions, and activities designed to
-                                    foster collaboration and knowledge sharing.
-                                  </p>
-                              </div>
-                            </div>
-                          </div>
-                          <div data-w-id="99b95664-6040-3674-5c95-712a66f135a4" style="opacity:0" class="list-items-wrap-item">
-                            <div class="item-content"> 
-                              <div class="big-text-number red">03</div>
-                              <div>
-                                  <h4 class="max-width-heading">Connect & Generate Leads</h4>
-                                  <p class="font-desktop text-white">
-                                    Engage with influential figures in the automotive world.
-                                    Build bridges with decision-makers, explore partnerships,
-                                    and immerse yourself in meaningful conversations that
-                                    inspire growth and innovation.<br />
-                                    Leverage the event’s unique environment to generate business
-                                    leads. Whether you’re looking to attract customers or forge
-                                    strategic alliances, IACF- Rush & Roar Show provides the
-                                    perfect setting.
-                                  </p>
-                              </div>
-                            </div>
-                          </div>
-                          <button class="btn btn-primary read-more-btn">Read more</button>
+            <div class="flex-block-container">
+              <div class="half-section-block">
+                <div class="list-items-wrap">
+                  <div data-aos="fade-up" class="list-items-wrap-item">
+                    <div class="item-content">
+                      <div class="big-text-number red">01</div>
+                        <div>
+                            <h4 class="max-width-heading">Learn & Network</h4>
+                            <p class="font-desktop text-white">
+                              Discover the latest trends and innovations in the automotive
+                              world through engaging workshops, interactive seminars, and
+                              live demonstrations. Gain valuable insights into emerging
+                              automotive technologies while having fun. <br />
+                              Connect with designers, engineers, executives, and thought
+                              leaders in the automotive industry. Build meaningful
+                              relationships that could lead to mentorship, partnerships,
+                              and business opportunities.
+                            </p>
+                        </div>
                       </div>
                   </div>
-                  <div class="half-section-block block-with-image">
-                    <img src="./images/network.webp" loading="lazy" style="opacity:0" data-w-id="8055d274-8b0e-1959-ca33-882eda8970ae" alt="chart" class="chart-image-top" />
-                    <img src="./images/interaction.jpg" loading="lazy" style="opacity:0" data-w-id="6787e16c-14af-f34c-af80-c5cbca596744" alt="chart" class="chart-image" />
-                    <img src="./images/leads.jpg" loading="lazy" alt="Image" class="rounded-image feature" />
+                  <div data-aos="fade-up" class="list-items-wrap-item">
+                    <div class="item-content">
+                      <div class="big-text-number red">02</div>
+                      <div>
+                          <h4 class="max-width-heading">Market & Interaction</h4>
+                          <p class="font-desktop text-white">
+                            Showcase your products and services to a targeted audience
+                            of automotive enthusiasts, collectors, and buyers. With high
+                            footfall and media visibility, this festival offers
+                            unmatched brand promotion opportunities. <br />
+                            Engage with a community of enthusiasts and professionals,
+                            sharing experiences and ideas. Participate in interactive
+                            sessions, panel discussions, and activities designed to
+                            foster collaboration and knowledge sharing.
+                          </p>
+                      </div>
+                    </div>
                   </div>
+                  <div data-aos="fade-up" class="list-items-wrap-item">
+                    <div class="item-content"> 
+                      <div class="big-text-number red">03</div>
+                      <div>
+                          <h4 class="max-width-heading">Connect & Generate Leads</h4>
+                          <p class="font-desktop text-white">
+                            Engage with influential figures in the automotive world.
+                            Build bridges with decision-makers, explore partnerships,
+                            and immerse yourself in meaningful conversations that
+                            inspire growth and innovation.<br />
+                            Leverage the event’s unique environment to generate business
+                            leads. Whether you’re looking to attract customers or forge
+                            strategic alliances, IACF- Rush & Roar Show provides the
+                            perfect setting.
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary read-more-btn">Read more</button>
+                </div>
               </div>
+              <div class="half-section-block block-with-image">
+                <div class="space-y-3 data-aos="fade-up">
+                  <h2 
+                    class="h2 text-[28px] lg:text-5xl leading-[36px] lg:leading-[50px] uppercase">
+                    Why Attend?
+                  </h2>
+                </div>
+                <img src="./images/network.webp" data-aos="fade-up" alt="chart" class="chart-image-top" />
+                <img src="./images/interaction.jpg" data-aos="fade-up" alt="chart" class="chart-image" />
+                <img src="./images/leads.jpg" alt="Image" class="rounded-image feature" />
+              </div>
+            </div>
           </div>
-        </section>
-      
-        <section id="unique-selling-points" class="section-investors bg-tertiary min-h-[calc(100svh)] relative z-0">
-          <div class="grid grid-cols-1 lg:grid-cols-2 base-container">
+        </section>      
+        <section id="unique-selling-points" class="section-investors bg-tertiary relative z-0">
+          <div class="grid grid-cols-1 lg:grid-cols-2 base-container scale-section">
             <div class="bg-investors overflow-hidden" data-animate-zoom>
               <picture>
                 <source srcset="./images/poster-final.webp" media="(max-width: 1023.98px)" />
@@ -896,8 +463,8 @@
                 <img class="pointer-events-none" src="./images/poster-final.webp" alt="" />
               </picture>
             </div>
-            <div class="flex flex-col gap-7 lg:gap-10 h-full text-primary pt-[15px] pb-[40px] lg:pt-[70px] lg:pb-[70px] px-[0] lg:px-0">
-              <div class="space-y-3">
+            <div class="flex flex-col gap-7 lg:gap-10 h-full text-primary pt-[15px] pb-[40px] lg:pt-[0px] lg:pb-[70px] px-[10px] lg:px-0">
+              <div class="space-y-3 lg:pt-[50px]" data-aos="fade-up">
                 <h2 class="max-w-[320px]:text-xl text-[28px] lg:text-3xl leading-[36px] uppercase text-black-outline"
                   data-text="Unique Selling Points">
                   Unique Selling Points
@@ -1054,9 +621,6 @@
                   </div>
                 </div>
               </div>
-              <!-- <div class="flex justify-center lg:justify-end">
-                <a href="#footer" class="btn btn-primary"> Know More </a>
-              </div> -->
             </div>
           </div>
         </section>
@@ -1077,11 +641,10 @@
         
         <section id="event-highlight" class="section-polaroid">
           <div class="lg:px-20 relative z-10 small-heading">
-            <h2 data-w-id="11681cd6-2140-f41d-c8e4-101f8db467b2" style="opacity: 0"
+            <h2 data-aos="fade-up"
               class="text-[28px] lg:text-5xl leading-[30px] lg:leading-[50px] text-primary text-center uppercase pb-0 lg:pb-18">
               Event Highlights
             </h2>
-            <!-- data-w-id="32d7511f-2cb7-1700-2cb9-1dbd6627ccb0" -->
             <div class="max-w-[1400px] lg:max-w-[1200px] mx-auto relative mt-0 lg:mt-24">
               <div class="flex flex-row flex-nowrap">
                 <div class="scroll-custom relative w-full flex pt-14 lg:pt-0 pb-14 snap-mandatory snap-x">
@@ -1176,7 +739,7 @@
         <section id="competitions" class="section-koko relative z-0 overflow-hidden">
           <div class="max-[320px]:px-[2rem] px-[2.875rem] lg:px-10 container-max">
             <div
-              class="grid grid-cols-1 lg:grid-cols-2 lg:min-h-[calc(100svh)] pt-[60px] pb-[60px] lg:pt-16 lg:pb-20">
+              class="grid grid-cols-1 lg:grid-cols-2 lg:min-h-[calc(8svh)] pt-[60px] pb-[60px] lg:pt-0 lg:pb-10">
               <div class="h-full flex flex-col justify-center items-center">
                 <div class="wrap-img-1">
                   <img class="img-1" src="./images/skill-1.webp" alt="" />
@@ -1188,8 +751,8 @@
                   <img class="img-3" src="./images/skill-3.webp" alt="" />
                 </div>
               </div>
-              <div class="flex flex-col gap-10 h-full justify-center">
-                <h2 class="text-xl lg:text-5xl leading-[30px] lg:leading-[50px] uppercase text-left">
+              <div class="flex flex-col gap-8 h-full justify-center">
+                <h2 class="text-xl lg:text-5xl leading-[30px] lg:leading-[50px] uppercase text-left" data-aos="fade-up">
                   Key Competitions
                 </h2>
                 <ul class="list-disc text-white lg:text-justify">
@@ -1249,30 +812,29 @@
           z-index: 1;
         ">
           <div class="container investors-section">
-            <h2
+            <h2 data-aos="fade-up" 
               class="heading-polaroid text-[28px] lg:text-5xl leading-[30px] lg:leading-[50px] text-white text-center mb-20 uppercase"
             >
               Why Sponsor?
             </h2>
             <div class="grid grid-cols-1 lg:grid-cols-2">
-              <div id="w-node-_98f45678-3d76-6758-95f9-ceb2a1578eef-f30b2932" data-w-id="98f45678-3d76-6758-95f9-ceb2a1578eef" style="opacity:0" class="banner-images-container">
-                <img src="./images/why-sponsor.webp" loading="lazy" alt="Image" class="banner-image-center" />
-                <img src="./images/spiral.svg"
-                loading="lazy" data-w-id="059609f8-3c86-efa4-5af3-afafebd32cad" alt="" class="home-2-banner-image" />
+              <div class="banner-images-container">
+                <img src="./images/why-sponsor.webp" alt="Image" class="banner-image-center" />
+                <img src="./images/spiral.svg" data-w-id="059609f8-3c86-efa4-5af3-afafebd32cad" alt="" class="home-2-banner-image" />
                 <div data-w-id="f0ba862b-ed65-0b6a-e88a-6477a34cb8f0" class="banner-icon right-bottom">
-                  <img src="./images/network.png" loading="lazy" width="44" alt="" />
+                  <img src="./images/network.png" width="44" alt="" />
                 </div>
                 <div data-w-id="838a8e90-f37a-2fa5-f9aa-01d6a9676338" class="banner-icon right">
-                  <img src="./images/icon.svg" loading="lazy" alt="" />
+                  <img src="./images/icon.svg" alt="" />
                 </div>
                 <div data-w-id="ba656c56-f74f-a0d2-3fa5-42c275966469" class="banner-icon left">
-                  <img src="./images/brand.png" loading="lazy" alt="" />
+                  <img src="./images/brand.png" alt="" />
                 </div>
                 <div data-w-id="e7f64ce1-ab2d-1419-b9b7-b30e23e77446" class="banner-icon top-left">
-                  <img src="./images/automobile.png" loading="lazy" alt="" />
+                  <img src="./images/automobile.png" alt="" />
                 </div>
                 <div data-w-id="6acd4975-3649-5a06-f95e-817277a93723" class="banner-icon top-right">
-                  <img src="./images/reach.png" loading="lazy" alt="" />
+                  <img src="./images/reach.png" alt="" />
                 </div>
               </div>
               <div class="flex flex-col gap-10 h-full text-primary pt-[30px] lg:pt-[80px] px-[1.625rem] lg:px-20">
@@ -1393,7 +955,7 @@
           </div>
       
           <img class="firework-bg" src="./images/fireworks-bg.png" />
-          <img class="viewers-bg" src="./images/viewers.png" />
+          <img class="viewers-bg" src="./images/viewers.png"/>
         </div>
       </div>
 
@@ -1401,12 +963,12 @@
       <div class="overlay-card"></div>
       <section class="section dark-background-overflow-hidden" id="counter-section">
         <div class="w-layout-blockcontainer base-container w-container">
-          <div data-w-id="3431c878-90b0-e5e2-e975-b67df5260b9b" style="opacity: 0" class="content-block">
+          <div data-aos="fade-up" class="content-block">
             <div class="big-text-about">
               Experience adrenaline-fueled action, star-studded races, 
               and the future of motorsport entertainment at Rush & Roar Show!
             </div>
-            <div data-w-id="9bdbe164-2765-e90c-eaa9-0349a634c7c6" style="opacity: 0" class="statistics-wrap">
+            <div data-aos="fade-up" class="statistics-wrap">
               <div class="statistic-item">
                 <div class="statistic-number text-gradient">
                   <span class="counter-value" data-value="250">0</span>M
@@ -1449,15 +1011,15 @@
           <div class="flex flex-col justify-between min-h-[calc(100svh-200px)]">
             <div class="grid grid-cols-1 lg:grid-cols-2 w-full gap-12 lg:gap-24">
               <div class="flex flex-col gap-8 max-[448px] relative">
-                <h2 class="text-[28px] lg:text-5xl">
+                <h2 class="text-[28px] lg:text-5xl" data-aos="fade-up">
                   <img src="./images/R-R-logo.webp" class="max-w-[300px]" />
                 </h2>
-                <p>
+                <p data-aos="fade-up">
                   Whether you are a Sponsor, Exhibitor or Enthusiast,<br />
                   <b>RUSH & ROAR SHOW</b>
                   offers opportunities for everyone to shine.
                 </p>
-                <div class="space-y-3">
+                <div class="space-y-3" data-aos="fade-up">
                   <p class="font-medium">Ways to Participate</p>
                   <ul style="max-width: 300px">
                     <li>
@@ -1474,19 +1036,8 @@
                     </li>
                   </ul>
                 </div>
-                <!-- <div class="space-y-3">
-                  <p class="font-medium">CONTACT DETAILS</p>
-                  <a class="link-underline" href="tel:+91 9876 543 210">
-                    +91 9876 543 210 </a><br />
-                  <a class="max-[320px]:text-[14px] max-[400px]:text-[15px] link-underline hover:text-primary"
-                    href="mailto:Contact@rushandroar.com ">
-                    Contact@rushandroar.com 
-                  </a>
-                </div> -->
-
-                <!-- social media -->
-                <a href="javascript:void(0)" class="form-open2 btn btn-primary text-[0.9rem] whitespace-nowrap btn-all flex lg:hidden !mx-0">Contact Us</a>
-                <div class="flex gap-4">
+                <a data-aos="fade-up" href="javascript:void(0)" class="form-open2 btn btn-primary text-[0.9rem] whitespace-nowrap btn-all flex lg:hidden !mx-0">Contact Us</a>
+                <div class="flex gap-4" data-aos="fade-up">
                   <a class="cursor-pointer" href="https://www.instagram.com/rushandroar?igsh=MXJ1bDRsaTQzN3E3cQ%3D%3D&utm_source=qr" target="_blank">
                     <i class="fab fa-instagram fa-2x"></i>
                   </a>
@@ -1494,7 +1045,7 @@
                     <i class="fab fa-threads fa-2x"></i>
                   </a>
                 </div>
-                <div class="manequin-img">
+                <div class="manequin-img" data-aos="fade-up">
                   <img src="./images/manequin.png" alt="Manequin" />
                   <div class="stars-container">
                     <div class="star"></div>
@@ -1503,7 +1054,7 @@
                   </div>
                 </div>
               </div>
-              <div class="form-contact pb-10" id="formContainer">
+              <div class="form-contact pb-10" id="formContainer" data-aos="fade-up">
                 <div class="modal-overlay" id="modalOverlay"></div>
                 <div class="form-wrapper">
                     <button class="close-modal" id="closeModal">&times;</button>
@@ -1555,54 +1106,6 @@
                     </form>
                 </div>
               </div>
-              <!-- <div class="form-contact pb-10">
-                <form id="contactForm" action="#" method="POST">
-                  <div class="form-group">
-                      <label class="required" for="fullName">Full Name</label>
-                      <input type="text" id="fullName" name="fullName" required>
-                  </div>
-          
-                  <div class="grid grid-cols-2 gap-4">
-                    <div class="form-group">
-                      <label class="required" for="email">Email Address</label>
-                      <input type="email" id="email" name="email" required>
-                    </div>
-            
-                    <div class="form-group">
-                        <label class="required" for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
-                    </div>
-                  </div>
-          
-                  <div class="form-group">
-                      <label for="subject">Subject</label>
-                      <select id="subject" name="subject">
-                          <option value="">Select a subject</option>
-                          <option value="general">General Inquiry</option>
-                          <option value="sponsorship">Sponsorship & Partnership</option>
-                          <option value="media">Media & Press</option>
-                          <option value="ticketing">Ticketing & Attendee Support</option>
-                          <option value="vendor">Vendor & Exhibitor Registration</option>
-                          <option value="motorsport">Motorsport Participation</option>
-                          <option value="skills">Skills Participation</option>
-                      </select>
-                  </div>
-          
-                  <div class="form-group">
-                      <label for="message">Message</label>
-                      <textarea id="message" name="message" rows="5"></textarea>
-                  </div>
-          
-                  <div class="form-group">
-                      <div class="captcha-container">
-                          <span class="captcha-text" id="captchaQuestion">What is 5 + 3?</span>
-                          <input type="text" id="captcha" name="captcha" placeholder="Enter answer" required>
-                      </div>
-                  </div>
-          
-                  <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-              </div> -->
             </div>
             <div class="flex flex-wrap gap-2 lg:gap-4 text-[14px] w-full mt-10">
               <p class="whitespace-nowrap text">
@@ -1653,7 +1156,7 @@
       <script type="text/javascript" src="./js/config.js" id="config-animate-js"></script>
       <script type="text/javascript" src="./js/custom.js" id="main-js-js"></script>
       <script type="text/javascript" src="./js/header.js" id="header-js-js"></script>
-      <script type="text/javascript" src="./js/intro.js" id="animate-intro-js"></script>
+      <!-- <script type="text/javascript" src="./js/intro.js" id="animate-intro-js"></script> -->
       <script type="text/javascript" src="./js/hero.js" id="animate-hero-js"></script>
       <script type="text/javascript" src="./js/polaroid.js" id="animate-polaroid-js"></script>
       <script type="text/javascript" src="./js/card.js" id="animate-card-js"></script>
@@ -1667,9 +1170,6 @@
         integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
         crossorigin="anonymous">
         </script>
-      <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js">
-      </script>
       <script src="./js/vendor.js" type="text/javascript"></script>
       <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -1686,7 +1186,7 @@
                     loader.style.display = 'none';
                     content.style.opacity = '1';
                     content.style.visibility = 'visible';
-                }, 500); // Match transition duration
+                }, 50); // Match transition duration
             });
         });
         const heading = document.querySelector('.text-black-outline');
@@ -1805,5 +1305,9 @@
       </script>
     </div>
   </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
