@@ -341,7 +341,7 @@ img {
     position: absolute;
     max-width: 260px;
     left: auto;
-    bottom: -188px;
+    bottom: -179px;
     display: block;
     right: 0
 }
@@ -1583,7 +1583,7 @@ textarea {
     margin-top: 8px;
     margin-bottom: 8px;
     font-family: Inter, sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 1.2em
 }
@@ -1726,7 +1726,7 @@ image.feature-call-to-action {
     }
     h2.uppercase,
     .small-heading h2.uppercase {
-        font-size: 12vw
+        font-size: 10vw;
     }
     .logo-circle {
         width: 330px;
@@ -1772,7 +1772,7 @@ image.feature-call-to-action {
         bottom: 90px
     }
     .font-desktop {
-        font-size: 16px
+        font-size: 14px;
     }
     .btn.btn-primary {
         margin-left: auto;
@@ -1891,7 +1891,7 @@ image.feature-call-to-action {
         border-radius: 10px
     }
     h2.uppercase.text-black-outline {
-        font-size: 12vw
+        font-size: 8vw;
     }
     .accordion-head p {
         font-size: 16px;
@@ -2085,11 +2085,11 @@ image.feature-call-to-action {
         width: 80%
     }
     .chart-image-top {
-        width: 180px !important;
-        top: 123px;
+        width: 120px !important;
+        top: 53px;
     }
     .chart-image {
-        width: 160px !important;
+        width: 140px !important;
         inset: auto auto 3% 0%;
     }
 }
