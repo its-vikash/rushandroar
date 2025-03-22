@@ -2800,14 +2800,14 @@ a {
 }
 
 .bg-features {
-    background-color: radial-gradient(73.37%123.14%at 14.58%87.41%, #f1c3a9 0, #f1c3a9 47.5%, #fff089.5%), linear-gradient(0deg, #f1c3a9, #f1c3a9);
     height: 100%;
     left: 0;
     pointer-events: none;
     position: absolute;
     right: 0;
     top: 0;
-    width: 100%
+    width: 100%;
+    background: radial-gradient(80% 30% at 90% 100%, rgb(175, 62, 12) 0%, rgba(175, 62, 12, 0.59) 47.5%, rgba(175, 62, 12, 0) 89.5%), linear-gradient(0deg, rgb(19, 42, 72), rgb(19, 42, 72)) !important;!i;!;
 }
 
 .video-intro {

@@ -257,7 +257,7 @@
     </span>
   </div>
   <div id="content">
-    <header style="background-color: rgba(0 0 0 / 80%)" data-aos="fade-down">
+    <header style="background-color: rgba(0 0 0 / 80%)" data-aos="fade-down" data-aos-once="true">
       <div class="px-[1.625rem] lg:px-[2.875rem]">
         <div class="flex justify-center items-center lg:justify-between">
           <div class="lg:gap-8 lg:gap-12 w-1/3 hidden lg:flex">
@@ -327,11 +327,14 @@
             <div class="w-layout-blockcontainer base-container w-container">
               <img class="image-small-right" src="./images/manequin.png" alt="Team Member"
                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 120px, (max-width: 1279px) 140px, 250px"
-                data-aos="fade-up" data-aos-duration="1500"/>
-                <div class="typing-text-common">
+                data-aos="fade-up" data-aos-once="true"/>
+                <div class="typing-text-common hidden lg:block">
                   <div class="typing-text1">One Track . Endless Stories . The New Era Begins</div>
                 </div>
-              <div class="home-1-banner-text-wrap" data-aos="fade-up">
+                <marquee width="100%" direction="left" class="typing-text-common lg:hidden">
+                  <div class="typing-text1">One Track . Endless Stories . The New Era Begins</div>
+                </marquee>
+              <div class="home-1-banner-text-wrap" data-aos="fade-up" data-aos-once="true">
                 <div class="banner-logo-wrap">
                   <img src="./images/logo.webp" alt="Rush & Roar Show" class="logo banner-logo" />
                 </div>
@@ -364,7 +367,7 @@
               </a>
               <a href="javascript:void(0)" class="form-open btn btn-primary text-[0.9rem] whitespace-nowrap btn-all flex lg:hidden">Get in touch</a>
             </div>
-            <div class="video-intro video-start block" data-aos="fade-up">
+            <div class="video-intro video-start block" data-aos="fade-up" data-aos-once="true">
               <div class="video-wrapper">
                 <video class="lazy video-move" id="myVideo" controls autoplay muted loop playsinline>
                   <source data-src="./video/car-race.mp4" type="video/mp4" />
@@ -383,7 +386,7 @@
             <div class="flex-block-container">
               <div class="half-section-block">
                 <div class="list-items-wrap">
-                  <div data-aos="fade-up" class="list-items-wrap-item">
+                  <div data-aos="fade-up" data-aos-once="true" class="list-items-wrap-item">
                     <div class="item-content">
                       <div class="big-text-number red">01</div>
                         <div>
@@ -402,7 +405,7 @@
                         </div>
                       </div>
                   </div>
-                  <div data-aos="fade-up" class="list-items-wrap-item">
+                  <div data-aos="fade-up" data-aos-once="true" class="list-items-wrap-item">
                     <div class="item-content">
                       <div class="big-text-number red">02</div>
                       <div>
@@ -421,7 +424,7 @@
                       </div>
                     </div>
                   </div>
-                  <div data-aos="fade-up" class="list-items-wrap-item">
+                  <div data-aos="fade-up" data-aos-once="true" class="list-items-wrap-item">
                     <div class="item-content"> 
                       <div class="big-text-number red">03</div>
                       <div>
@@ -443,14 +446,14 @@
                 </div>
               </div>
               <div class="half-section-block block-with-image">
-                <div class="space-y-3" data-aos="fade-up">
+                <div class="space-y-3" data-aos="fade-up" data-aos-once="true">
                   <h2 
                     class="h2 text-[28px] lg:text-5xl leading-[36px] lg:leading-[50px] uppercase">
                     Why Attend?
                   </h2>
                 </div>
-                <img src="./images/network.webp" data-aos="fade-up" alt="chart" class="chart-image-top" />
-                <img src="./images/interaction.jpg" data-aos="fade-up" alt="chart" class="chart-image" />
+                <img src="./images/network.webp" data-aos="fade-up" data-aos-once="true" alt="chart" class="chart-image-top" />
+                <img src="./images/interaction.jpg" data-aos="fade-up" data-aos-once="true" alt="chart" class="chart-image" />
                 <img src="./images/leads.jpg" alt="Image" class="rounded-image feature" />
               </div>
             </div>
@@ -466,7 +469,7 @@
               </picture>
             </div>
             <div class="flex flex-col gap-7 lg:gap-10 h-full text-primary pt-[15px] pb-[40px] lg:pt-[0px] lg:pb-[70px] px-[10px] lg:px-0">
-              <div class="space-y-3 lg:pt-[50px]" data-aos="fade-up">
+              <div class="space-y-3 lg:pt-[50px]" data-aos="fade-up" data-aos-once="true">
                 <h2 class="max-w-[320px]:text-xl text-[28px] lg:text-3xl leading-[36px] uppercase text-black-outline"
                   data-text="Unique Selling Points">
                   Unique Selling Points
@@ -643,7 +646,7 @@
         
         <section id="event-highlight" class="section-polaroid">
           <div class="lg:px-20 relative z-10 small-heading">
-            <h2 data-aos="fade-up"
+            <h2 data-aos="fade-up" data-aos-once="true"
               class="text-[28px] lg:text-5xl leading-[30px] lg:leading-[50px] text-primary text-center uppercase pb-0 lg:pb-18">
               Event Highlights
             </h2>
@@ -754,7 +757,7 @@
                 </div>
               </div>
               <div class="flex flex-col gap-8 h-full justify-center">
-                <h2 class="text-xl lg:text-5xl leading-[30px] lg:leading-[50px] uppercase text-left" data-aos="fade-up">
+                <h2 class="text-xl lg:text-5xl leading-[30px] lg:leading-[50px] uppercase text-left" data-aos="fade-up" data-aos-once="true">
                   Key Competitions
                 </h2>
                 <ul class="list-disc text-white lg:text-justify">
@@ -814,7 +817,7 @@
           z-index: 1;
         ">
           <div class="container investors-section">
-            <h2 data-aos="fade-up" 
+            <h2 data-aos="fade-up" data-aos-once="true"
               class="heading-polaroid text-[28px] lg:text-5xl leading-[30px] lg:leading-[50px] text-white text-center mb-20 uppercase"
             >
               Why Sponsor?
@@ -965,12 +968,12 @@
       <div class="overlay-card"></div>
       <section class="section dark-background-overflow-hidden" id="counter-section">
         <div class="w-layout-blockcontainer base-container w-container">
-          <div data-aos="fade-up" class="content-block">
+          <div data-aos="fade-up" data-aos-once="true" class="content-block">
             <div class="big-text-about">
               Experience adrenaline-fueled action, star-studded races, 
               and the future of motorsport entertainment at Rush & Roar Show!
             </div>
-            <div data-aos="fade-up" class="statistics-wrap">
+            <div data-aos="fade-up" data-aos-once="true" class="statistics-wrap">
               <div class="statistic-item">
                 <div class="statistic-number text-gradient">
                   <span class="counter-value" data-value="250">0</span>M
@@ -1013,15 +1016,15 @@
           <div class="flex flex-col justify-between min-h-[calc(100svh-200px)]">
             <div class="grid grid-cols-1 lg:grid-cols-2 w-full gap-12 lg:gap-24">
               <div class="flex flex-col gap-8 max-[448px] relative">
-                <h2 class="text-[28px] lg:text-5xl" data-aos="fade-up">
+                <h2 class="text-[28px] lg:text-5xl" data-aos="fade-up" data-aos-once="true">
                   <img src="./images/R-R-logo.webp" class="max-w-[300px]" />
                 </h2>
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" data-aos-once="true">
                   Whether you are a Sponsor, Exhibitor or Enthusiast,<br />
                   <b>RUSH & ROAR SHOW</b>
                   offers opportunities for everyone to shine.
                 </p>
-                <div class="space-y-3" data-aos="fade-up">
+                <div class="space-y-3" data-aos="fade-up" data-aos-once="true">
                   <p class="font-medium">Ways to Participate</p>
                   <ul style="max-width: 300px">
                     <li>
@@ -1038,7 +1041,7 @@
                     </li>
                   </ul>
                 </div>
-                <a data-aos="fade-up" href="javascript:void(0)" class="form-open2 btn btn-primary text-[0.9rem] whitespace-nowrap btn-all flex lg:hidden !mx-0">Contact Us</a>
+                <a data-aos="fade-up" data-aos-once="true" href="javascript:void(0)" class="form-open2 btn btn-primary text-[0.9rem] whitespace-nowrap btn-all flex lg:hidden !mx-0">Contact Us</a>
                 <div class="flex gap-4" data-aos="fade-up">
                   <a class="cursor-pointer" href="https://www.instagram.com/rushandroar?igsh=MXJ1bDRsaTQzN3E3cQ%3D%3D&utm_source=qr" target="_blank">
                     <i class="fab fa-instagram fa-2x"></i>
@@ -1047,7 +1050,7 @@
                     <i class="fab fa-threads fa-2x"></i>
                   </a>
                 </div>
-                <div class="manequin-img" data-aos="fade-up">
+                <div class="manequin-img" data-aos="fade-up" data-aos-once="true">
                   <img src="./images/manequin.png" alt="Manequin" />
                   <div class="stars-container">
                     <div class="star"></div>
@@ -1056,7 +1059,7 @@
                   </div>
                 </div>
               </div>
-              <div class="form-contact pb-10" id="formContainer" data-aos="fade-up">
+              <div class="form-contact pb-10" id="formContainer" data-aos="fade-up" data-aos-once="true">
                 <div class="modal-overlay" id="modalOverlay"></div>
                 <div class="form-wrapper">
                     <button class="close-modal" id="closeModal">&times;</button>
@@ -1159,7 +1162,7 @@
       <script type="text/javascript" src="./js/custom.js" id="main-js-js"></script>
       <script type="text/javascript" src="./js/header.js" id="header-js-js"></script>
       <!-- <script type="text/javascript" src="./js/intro.js" id="animate-intro-js"></script> -->
-      <script type="text/javascript" src="./js/hero.js" id="animate-hero-js"></script>
+      <!-- <script type="text/javascript" src="./js/hero.js" id="animate-hero-js"></script> -->
       <script type="text/javascript" src="./js/polaroid.js" id="animate-polaroid-js"></script>
       <script type="text/javascript" src="./js/card.js" id="animate-card-js"></script>
       <script type="text/javascript" src="./js/koko.js" id="animate-koko-js"></script>
@@ -1252,59 +1255,7 @@
             } else {
                 formContainer.style.display = 'none';
             }
-        });
-        document.addEventListener('DOMContentLoaded', function() {              
-          function createMobileMarquee() {
-          const isMobile = window.innerWidth <= 1025;
-          const container = document.querySelector('.typing-text-common');
-          const originalContent = container.innerHTML;
-          
-          if (!isMobile) {
-            container.innerHTML = originalContent;
-            return;
-          }
-
-          const textElement = container.querySelector('.typing-text1');
-          if (!textElement || container.querySelector('.marquee-wrapper')) return;
-
-          // Create marquee elements
-          const wrapper = document.createElement('div');
-          wrapper.className = 'marquee-wrapper';
-          
-          const clone1 = textElement.cloneNode(true);
-          const clone2 = textElement.cloneNode(true);
-          
-          wrapper.append(textElement, clone1, clone2);
-          container.innerHTML = '';
-          container.appendChild(wrapper);
-
-          // Animation logic
-          const textWidth = textElement.offsetWidth;
-          const animation = wrapper.animate([
-            { transform: 'translateX(0)' },
-            { transform: `translateX(-${textWidth * 2}px)` }
-          ], {
-            duration: (textWidth / 30) * 1000, // 30px per second
-            iterations: Infinity
-          });
-
-          // Resize handler
-          let resizeTimer;
-          window.addEventListener('resize', () => {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(() => {
-              animation.cancel();
-              container.innerHTML = originalContent;
-              createMobileMarquee();
-            }, 100);
-          });
-        }
-
-        // Initialize on load and resize
-        window.addEventListener('load', createMobileMarquee);
-        window.addEventListener('resize', createMobileMarquee);
-        });
-        
+        });        
       </script>
     </div>
   </div>
@@ -1344,7 +1295,25 @@
     </script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      once: true, // Only animate elements once
+      offset: 120, // Trigger animation when element is 120px from bottom
+      duration: 200,
+      anchorPlacement: 'bottom-bottom', // Trigger when element bottom reaches window bottom
+      initClassName: 'aos-init', // Keep initial hidden state
+      // disable: window.innerWidth < 768 // Disable on mobile if needed
+    });
+
+    // Force trigger animations for initially visible elements
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.refreshHard(); // Refresh AOS calculations
+      const visibleElements = document.querySelectorAll('[data-aos]:not(.aos-animate)');
+      visibleElements.forEach(el => {
+        if(el.getBoundingClientRect().top < window.innerHeight) {
+          el.classList.add('aos-animate');
+        }
+      });
+    });
   </script>
 </body>
 </html>
