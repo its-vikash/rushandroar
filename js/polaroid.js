@@ -41,18 +41,6 @@ gsap
   );
 
 mm.add("(min-width: 1024px)", () => {
-  gsap.from(".heading-polaroid", {
-    y: 50,
-    opacity: 0,
-    duration: 0.5,
-    scrollTrigger: {
-      trigger: ".section-polaroid",
-      scrub: false,
-      start: "top top",
-      end: "top top",
-    },
-  });
-
   gsap.from(".card:nth-child(1)", {
     x: "160%",
     y: "10%",
