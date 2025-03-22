@@ -341,7 +341,7 @@ video {
     --tw-backdrop-sepia:
 }
 
-.\ !container {
+.\!container {
     margin-left: auto !important;
     margin-right: auto !important;
     padding-left: 2.875rem !important;
@@ -358,7 +358,7 @@ video {
 }
 
 @media(min-width:640px) {
-    .\ !container {
+    .\!container {
         max-width: 640px !important;
         padding-left: 3.75rem !important;
         padding-right: 3.75rem !important
@@ -371,7 +371,7 @@ video {
 }
 
 @media(min-width:1025px) {
-    .\ !container {
+    .\!container {
         max-width: 768px !important
     }
     .container {
@@ -380,7 +380,7 @@ video {
 }
 
 @media(min-width:1024px) {
-    .\ !container {
+    .\!container {
         max-width: 1024px !important;
         padding-left: 2.875rem !important;
         padding-right: 2.875rem !important
@@ -393,7 +393,7 @@ video {
 }
 
 @media(min-width:1280px) {
-    .\ !container {
+    .\!container {
         max-width: 1280px !important;
         padding-left: 2.875rem !important;
         padding-right: 2.875rem !important
@@ -406,7 +406,7 @@ video {
 }
 
 @media(min-width:1536px) {
-    .\ !container {
+    .\!container {
         max-width: 1536px !important;
         padding-left: 2.875rem !important;
         padding-right: 2.875rem !important
@@ -449,7 +449,7 @@ video {
     pointer-events: auto
 }
 
-.\ !visible {
+.\!visible {
     visibility: visible !important
 }
 
@@ -473,7 +473,7 @@ video {
     position: fixed
 }
 
-.\ !absolute {
+.\!absolute {
     position: absolute !important
 }
 
@@ -485,7 +485,7 @@ video {
     position: relative
 }
 
-.\ !sticky {
+.\!sticky {
     position: sticky !important
 }
 
@@ -741,7 +741,7 @@ video {
     display: list-item
 }
 
-.\ !hidden {
+.\!hidden {
     display: none !important
 }
 
@@ -905,7 +905,7 @@ video {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))skewX(var(--tw-skew-x))skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))
 }
 
-.\ !transform {
+.\!transform {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))skewX(var(--tw-skew-x))skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y)) !important
 }
 
@@ -2711,7 +2711,6 @@ a {
 
 .wrapper section {
     position: relative;
-    visibility: hidden
 }
 
 .wrapper .section-intro {
@@ -3117,7 +3116,6 @@ a {
     bottom: 5rem;
     left: 50%;
     position: fixed;
-    visibility: hidden;
     z-index: 9999;
     --tw-translate-x: -50%;
     cursor: pointer;
@@ -3128,7 +3126,7 @@ a {
     animation: bounce 1.5s infinite
 }
 
-[data-animate-zoom]img {
+[data-animate-zoom] img {
     opacity: 1
 }
 
@@ -3429,7 +3427,7 @@ header .link-underline {
     display: flex;
     font-weight: 700;
     gap: .5rem;
-    height: 60px;
+    height: 50px;
     justify-content: center;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -3446,11 +3444,11 @@ header .link-underline {
     position: relative;
     z-index: 1;
     transition: all 0.4s ease 0s;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: capitalize;
-    padding: 10px 20px;
+    padding: 8px 16px;
     color: #fff;
     background-image: linear-gradient(90deg, #3e56a7, #04acff, #eaaaaa, #ffa24f, #5e3924, #3e56a7, #14accc);
     background-size: 400%;
@@ -3775,7 +3773,8 @@ header .link-underline {
     .card {
         max-width: 280px;
         min-width: 250px;
-        position: absolute
+        position: absolute;
+        min-height: 380px;
     }
 }
 
@@ -3836,8 +3835,8 @@ header .link-underline {
 
 .card:nth-child(2) {
     z-index: 2;
-    --tw-scale-x: 0.95;
-    --tw-scale-y: 0.95;
+    --tw-scale-x: 0.9;
+    --tw-scale-y: 0.9;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) skewX(var(--tw-skew-x))skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))
 }
 
@@ -3851,8 +3850,8 @@ header .link-underline {
 .card:nth-child(3) {
     z-index: 3;
     --tw-translate-x: -6%;
-    --tw-scale-x: 1.03;
-    --tw-scale-y: 1.03;
+    --tw-scale-x: 0.9;
+    --tw-scale-y: 0.9;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) skewX(var(--tw-skew-x))skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))
 }
 
@@ -3869,15 +3868,15 @@ header .link-underline {
 .card:nth-child(4) {
     z-index: 4;
     --tw-translate-x: -17%;
-    --tw-scale-x: 0.95;
-    --tw-scale-y: 0.95;
+    --tw-scale-x: 0.9;
+    --tw-scale-y: 0.9;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) skewX(var(--tw-skew-x))skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))
 }
 
 @media(min-width:1024px) {
     .card:nth-child(4) {
         left: 42%;
-        top: 100%;
+        top: 80%;
         --tw-translate-x: 0px;
         --tw-translate-y: 0.5rem;
         transform: translate(var(--tw-translate-x), var(--tw-translate-y)) skewX(var(--tw-skew-x))skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))
@@ -3887,15 +3886,15 @@ header .link-underline {
 .card:nth-child(5) {
     z-index: 6;
     --tw-translate-x: -18%;
-    --tw-scale-x: 1.05;
-    --tw-scale-y: 1.05;
+    --tw-scale-x: 0.9;
+    --tw-scale-y: 0.9;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) skewX(var(--tw-skew-x))skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))
 }
 
 @media(min-width:1024px) {
     .card:nth-child(5) {
-        left: 60%;
-        top: -100%;
+        left: 53%;
+        top: -210%;
         --tw-translate-x: 0px;
         --tw-translate-y: 1.5rem;
         transform: translate(var(--tw-translate-x), var(--tw-translate-y)) skewX(var(--tw-skew-x))skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))
@@ -3905,27 +3904,27 @@ header .link-underline {
 .card:nth-child(6) {
     z-index: 7;
     --tw-translate-x: -18%;
-    --tw-scale-x: 0.97;
-    --tw-scale-y: 0.97;
+    --tw-scale-x: 0.9;
+    --tw-scale-y: 0.9;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) skewX(var(--tw-skew-x))skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))
 }
 
 @media(min-width:1024px) {
     .card:nth-child(6) {
         left: 68%;
-        top: 200%;
+        top: 70%;
         --tw-translate-x: 0px;
         --tw-translate-y: 1.5rem;
-        --tw-scale-x: 1;
-        --tw-scale-y: 1;
+        --tw-scale-x: 0.9;
+        --tw-scale-y: 0.9;
         transform: translate(var(--tw-translate-x), var(--tw-translate-y)) skewX(var(--tw-skew-x))skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))
     }
 }
 
 .card:nth-child(7) {
     z-index: 5;
-    --tw-scale-x: 0.95;
-    --tw-scale-y: 0.95;
+    --tw-scale-x: 0.9;
+    --tw-scale-y: 0.9;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) skewX(var(--tw-skew-x))skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))
 }
 
@@ -4488,7 +4487,7 @@ input[type="checkbox"] {
 
 @media(min-width:1024px) {
     .section-koko .wrap-img-1 .img-1 {
-        max-width: 400px
+        max-width: 280px;
     }
 }
 
@@ -4525,7 +4524,7 @@ input[type="checkbox"] {
 
 @media(min-width:1280px) {
     .section-koko .wrap-img-2 .img-2 {
-        max-width: 320px
+        max-width: 290px;
     }
 }
 
@@ -4548,7 +4547,7 @@ input[type="checkbox"] {
         left: auto;
         top: auto;
         --tw-translate-x: 0px;
-        --tw-translate-y: -2rem;
+        --tw-translate-y: -6rem;
         justify-content: center;
         transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))skewX(var(--tw-skew-x))skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))
     }
@@ -4573,14 +4572,14 @@ input[type="checkbox"] {
 
 @media(min-width:1280px) {
     .section-koko .wrap-img-3 .img-3 {
-        max-width: 250px
+        max-width: 200px;
     }
 }
 
 .section-investors .bg-investors {
     min-height: 280px;
     width: 100%;
-    padding: 70px 0
+    padding: 70px 0;
 }
 
 @media(min-width:1024px) {
@@ -4626,7 +4625,7 @@ input[type="checkbox"] {
 
 @media(min-width:1024px) {
     .section-polaroid .scroll-custom {
-        overflow-x: visible
+        overflow-x: visible;
     }
 }
 
@@ -4987,6 +4986,9 @@ input[type="checkbox"] {
     }
     .lg\:text-6xl {
         font-size: 3.125rem
+    }
+    .scale-section {
+      transform: scale(0.9);
     }
 }
 
