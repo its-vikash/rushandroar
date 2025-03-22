@@ -2092,6 +2092,32 @@ image.feature-call-to-action {
         width: 140px !important;
         inset: auto auto 3% 0%;
     }
+    .list-items-wrap-item .font-desktop {
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Show 3 lines */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+  
+      .list-items-wrap-item.active .font-desktop {
+        -webkit-line-clamp: unset;
+        display: block;
+      }
+  
+      .read-more {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 4px 12px 4px 0px;
+        color: #ffffff;
+      }
+  
+      /* Hide button on desktop */
+      @media (min-width: 1025px) {
+        .read-more {
+          display: none;
+        }
+      }
 }
 
 @media (max-width:767px) {
@@ -2119,31 +2145,9 @@ image.feature-call-to-action {
         height: 40px
     }
 }
-
-.list-items-wrap-item:nth-child(n+2) .item-content {
-    max-height: 0;
-    opacity: 0;
-    transition: all 0.4s cubic-bezier(.4, 0, .2, 1)
-}
-
-.show-items .list-items-wrap-item:nth-child(n+2) .item-content {
-    max-height: 1000px;
-    opacity: 1
-}
-
 .list-items-wrap-item {
     margin-bottom: 15px;
     overflow: hidden
-}
-
-.list-items-wrap-item:nth-child(n+2) {
-    padding: 0;
-    border: 0
-}
-
-.show-items .list-items-wrap-item:nth-child(n+2) {
-    border: 1px solid #f15c45;
-    padding: 20px 30px;
 }
 
 @media (min-width:1025px) {
@@ -2151,7 +2155,7 @@ image.feature-call-to-action {
         max-height: none !important;
         opacity: 1 !important
     }
-    .read-more-btn {
+    .read-more {
         display: none
     }
     .section-investors .bg-investors {

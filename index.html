@@ -343,7 +343,7 @@
         <div class="m-panel">
           <div
             class="overview fixed container lg:fixed z-20 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12 lg:pt-12 pb-9 lg:pb-0 lg:items-center h-[100vh]">
-            <div class="lg:col-span-2 lg:max-w-[700px] order-2 lg:order-1" data-aos="fade-up">
+            <div class="lg:col-span-2 lg:max-w-[700px] order-2 lg:order-1">
               <h3 class="text-dark text-base lg:text-xl mb-4 text-justify">
                 The
                 <strong>International Automotive Culture Festival (IACF)</strong>
@@ -398,6 +398,7 @@
                               relationships that could lead to mentorship, partnerships,
                               and business opportunities.
                             </p>
+                            <a href="javascript:void(0)" class="read-more">Read more</a>
                         </div>
                       </div>
                   </div>
@@ -416,6 +417,7 @@
                             sessions, panel discussions, and activities designed to
                             foster collaboration and knowledge sharing.
                           </p>
+                          <a href="javascript:void(0)" class="read-more">Read more</a>
                       </div>
                     </div>
                   </div>
@@ -434,10 +436,10 @@
                             strategic alliances, IACF- Rush & Roar Show provides the
                             perfect setting.
                           </p>
+                          <a href="javascript:void(0)" class="read-more">Read more</a>
                       </div>
                     </div>
                   </div>
-                  <button class="btn btn-primary read-more-btn">Read more</button>
                 </div>
               </div>
               <div class="half-section-block block-with-image">
@@ -1302,9 +1304,44 @@
         window.addEventListener('load', createMobileMarquee);
         window.addEventListener('resize', createMobileMarquee);
         });
+        
       </script>
     </div>
   </div>
+  <script>
+    document.querySelectorAll('.read-more').forEach(button => {
+      button.addEventListener('click', (e) => {
+        const parentItem = e.target.closest('.list-items-wrap-item');
+        const textElement = parentItem.querySelector('.font-desktop');
+        
+        parentItem.classList.toggle('active');
+        
+        // Toggle button text
+        const isExpanded = parentItem.classList.contains('active');
+        e.target.textContent = isExpanded ? 'Read less' : 'Read more';
+        
+        // Optional: Collapse other items when opening one
+        if(isExpanded) {
+          document.querySelectorAll('.list-items-wrap-item').forEach(item => {
+            if(item !== parentItem) {
+              item.classList.remove('active');
+              item.querySelector('.read-more').textContent = 'Read more';
+            }
+          });
+        }
+      });
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', () => {
+      if(window.innerWidth >= 768) {
+        document.querySelectorAll('.list-items-wrap-item').forEach(item => {
+          item.classList.remove('active');
+          item.querySelector('.read-more').textContent = 'Read more';
+        });
+      }
+    });
+    </script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
