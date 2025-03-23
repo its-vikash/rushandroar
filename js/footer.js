@@ -49,19 +49,19 @@ gsap
       scrub: 2,
       // markers: true,
     },
-  })
-  .fromTo(
-    ".wrap-feature-m",
-    {
-      duration: 2,
-      background: bgFooterFrom,
-    },
-    {
-      duration: 2,
-      background: isMobile ? bgFooterMobile : bgFooterDesktop,
-    },
-    "<"
-  );
+  });
+  // .fromTo(
+  //   ".wrap-feature-m",
+  //   {
+  //     duration: 2,
+  //     background: bgFooterFrom,
+  //   },
+  //   {
+  //     duration: 2,
+  //     background: bgFooterDesktop,
+  //   },
+  //   "<"
+  // );
 gsap
   .timeline({
     scrollTrigger: {

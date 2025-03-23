@@ -370,22 +370,26 @@ img {
     position: absolute;
     width: 40px;
     height: 40px;
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23FFD700" d="M12 0l3.09 6.26L22 7.27l-5 4.87 1.18 6.88L12 16l-6.18 3.02L7 12.14 2 7.27l6.91-1.01L12 0z"/></svg>');
+    background: url("../images/gold.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     animation: twinkle 2s infinite ease-in-out;
-    opacity: .8
 }
 
 .star:nth-child(1) {
     left: 18px;
     top: -9px;
-    animation-delay: 0.2s
+    animation-delay: 0.2s;
+    background-image: url("../images/bronze.png");
 }
 
 .star:nth-child(2) {
     left: -16px;
     top: 34px;
     width: 45px;
-    height: 45px
+    height: 45px;
+    background-image: url("../images/silver.png");
 }
 
 .star:nth-child(3) {
@@ -393,24 +397,19 @@ img {
     top: 80px;
     animation-delay: 0.6s;
     width: 50px;
+    background-image: url("../images/gold.png");
     height: 50px;
-    utf8,
-    <svg xmlns="http://www.w3.…6.18 3.02L7 12.14 2 7.27l6.91-1.01L12 0z"/></svg>;
-    url(
-    data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23FFD700" d="M12 0l3.09 6.26L22 7.27l-5 4.87 1.18 6.88L12 16l-6.18 3.02L7 12.14 2 7.27l6.91-1.01L12 0z"/></svg>)
 }
 
 @keyframes twinkle {
     0%,
     100% {
         transform: scale(1) rotate(0deg);
-        opacity: .4;
-        filter: grayscale(1)
+        opacity: .8;
     }
     50% {
         transform: scale(1.2) rotate(9deg);
         opacity: 1;
-        filter: brightness(1)
     }
 }
 
@@ -903,7 +902,7 @@ img {
     inset: 26% -58% 0% auto
 }
 
-@media (min-width:1280px) {
+@media (min-width:1199px) {
     .section.home-1-banner {
         padding-top: 210px;
         box-shadow: 0 0 20px 6px #000;
@@ -1112,13 +1111,15 @@ h2.uppercase.text-left {
     left: 50%;
     transform: translate(-50%, -100%);
     opacity: 1;
-    transition: all 0.2s cubic-bezier(.4, 0, .2, 1)
+    transition: all 0.2s cubic-bezier(.4, 0, .2, 1);
+    right: 0;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .header-logo {
     opacity: 0;
-    transform: translateY(0);
-    transition: all 0.8s cubic-bezier(.4, 0, .2, 1)
+    transition: opacity 0.5s ease-in-out;
 }
 
 .typing-text-common {
@@ -1144,7 +1145,7 @@ h2.uppercase.text-left {
     font-family: "Paytone One", sans-serif;
     text-align: center;
     letter-spacing: 0;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 .play-btn {
@@ -1991,7 +1992,17 @@ image.feature-call-to-action {
     .typing-text3 {
         font-size: 7vw;
         display: inline-block;
-        padding-right: 100%
+        white-space: nowrap;
+        letter-spacing: 5px;
+        animation: marquee-animation 12s linear infinite;
+    }
+    @keyframes marquee-animation {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
     }
     .mobile-form-trigger {
         display: block
@@ -2169,6 +2180,8 @@ image.feature-call-to-action {
 @media (max-width:1300px) and (min-width:1100px) {
     .banner-logo {
         width: 540px;
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+        will-change: transform;
     }
 } 
 

@@ -328,12 +328,9 @@
               <img class="image-small-right" src="./images/manequin.png" alt="Team Member"
                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 120px, (max-width: 1279px) 140px, 250px"
                 data-aos="fade-up" data-aos-once="true"/>
-                <div class="typing-text-common hidden lg:block">
-                  <div class="typing-text1">One Track . Endless Stories . The New Era Begins</div>
+                <div class="typing-text-common">
+                  <div class="typing-text1">One Track <span class="w-3 h-3 lg:h-2 lg:w-2 bg-red-500 mx-2 inline-block"></span> Endless Stories <span class="w-3 h-3 lg:h-2 lg:w-2 bg-red-500 mx-2 inline-block"></span> The New Era Begins</div>
                 </div>
-                <marquee width="100%" direction="left" scrollamount="5" class="typing-text-common lg:hidden">
-                  <div class="typing-text1">One Track . Endless Stories . The New Era Begins</div>
-                </marquee>
               <div class="home-1-banner-text-wrap" data-aos="fade-up" data-aos-once="true">
                 <div class="banner-logo-wrap">
                   <img src="./images/logo.webp" alt="Rush & Roar Show" class="logo banner-logo" />
@@ -1313,6 +1310,24 @@
           el.classList.add('aos-animate');
         }
       });
+    });
+    window.addEventListener('scroll', function () {
+      const bannerLogo = document.querySelector('.banner-logo');
+      const headerLogo = document.querySelector('.header-logo');
+      const bannerRect = bannerLogo.getBoundingClientRect();
+      const startFade = 100;
+      const endFade = 30; 
+      let progress = (bannerRect.top - endFade) / (startFade - endFade);
+      progress = Math.max(Math.min(progress, 1), 0);
+      const minScale = 0.3;
+      const scale = progress * (1 - minScale) + minScale;
+      bannerLogo.style.transform = `translate(-50%, -50%) scale(${scale})`;
+      bannerLogo.style.opacity = progress;
+      if (bannerRect.top <= (endFade + 10)) {
+        headerLogo.style.opacity = 1;
+      } else {
+        headerLogo.style.opacity = 0;
+      }
     });
   </script>
 </body>

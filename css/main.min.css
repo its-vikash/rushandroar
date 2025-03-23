@@ -2823,8 +2823,8 @@ a {
 }
 
 .video-intro video {
-    -o-object-fit: cover;
-    object-fit: cover
+    -o-object-fit: contain;
+    object-fit: contain;
 }
 
 .video-end {
