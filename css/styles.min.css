@@ -1984,21 +1984,19 @@ image.feature-call-to-action {
         transform: none
     }
     .marquee-wrapper {
-        display: inline-block;
-        white-space: nowrap
+        display: inline-flex;
+        animation: marquee-animation 8s linear infinite;
     }
-    .typing-text1,
-    .typing-text2,
-    .typing-text3 {
+    .typing-text1 {
         font-size: 7vw;
         display: inline-block;
         white-space: nowrap;
         letter-spacing: 5px;
-        animation: marquee-animation 12s linear infinite;
+        flex-shrink: 0;
     }
     @keyframes marquee-animation {
       from {
-        transform: translateX(100%);
+        transform: translateX(45%);
       }
       to {
         transform: translateX(-100%);
@@ -2235,7 +2233,7 @@ image.feature-call-to-action {
 
 @media (max-width: 500px) and (max-height: 810px) {
     .image-small-right {
-        width: 34vh;
+        width: 33vh;
         left: 10vw;
     }
 }
@@ -2245,7 +2243,7 @@ and(-webkit-min-device-pixel-ratio:0) { @media
     .safari_only { 
         @media (max-width: 500px) {
             .image-small-right {
-                width: 33vh;
+                width: 32vh;
                 left: 10vw;
             }
         }
