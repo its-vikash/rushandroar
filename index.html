@@ -1317,18 +1317,22 @@
       const bannerLogo = document.querySelector('.banner-logo');
       const headerLogo = document.querySelector('.header-logo');
       const bannerRect = bannerLogo.getBoundingClientRect();
-      const startFade = 100;
+      const isMobile = window.innerWidth < 768;
+      const startFade = 300;
       const endFade = 30; 
       let progress = (bannerRect.top - endFade) / (startFade - endFade);
       progress = Math.max(Math.min(progress, 1), 0);
       const minScale = 0.3;
-      const scale = progress * (1 - minScale) + minScale;
+      const scaleMultiplier = isMobile ? 1.5 : 1;
+      const scale = progress * (1 - minScale) + scaleMultiplier * minScale;
       bannerLogo.style.transform = `translate(-50%, -50%) scale(${scale})`;
-      bannerLogo.style.opacity = progress;
+      
       if (bannerRect.top <= (endFade + 10)) {
         headerLogo.style.opacity = 1;
+        bannerLogo.style.opacity = 0;
       } else {
         headerLogo.style.opacity = 0;
+        bannerLogo.style.opacity = 1;
       }
     });
   </script>
