@@ -2235,7 +2235,19 @@ image.feature-call-to-action {
 
 @media (max-width: 500px) and (max-height: 810px) {
     .image-small-right {
-        width: 33vh;
+        width: 34vh;
         left: 10vw;
     }
 }
+@media screen and (min-color-index:0) 
+and(-webkit-min-device-pixel-ratio:0) { @media
+{
+    .safari_only { 
+        @media (max-width: 500px) {
+            .image-small-right {
+                width: 33vh;
+                left: 10vw;
+            }
+        }
+    }
+}}
