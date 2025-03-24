@@ -2235,7 +2235,7 @@ image.feature-call-to-action {
 
 @media (max-width: 500px) and (max-height: 810px) {
     .image-small-right {
-        width: 38vh;
+        width: 33vh;
         left: 10vw;
     }
 }
