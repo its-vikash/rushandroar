@@ -1113,12 +1113,12 @@ h2.uppercase.text-left {
     opacity: 1;
     right: 0;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .header-logo {
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease;
 }
 
 .typing-text-common {
