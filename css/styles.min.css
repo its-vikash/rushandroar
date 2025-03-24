@@ -1111,15 +1111,14 @@ h2.uppercase.text-left {
     left: 50%;
     transform: translate(-50%, -100%);
     opacity: 1;
-    transition: all 0.2s cubic-bezier(.4, 0, .2, 1);
     right: 0;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 .header-logo {
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .typing-text-common {
