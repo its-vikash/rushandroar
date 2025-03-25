@@ -15,7 +15,7 @@ html {
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
     font-family: 'Built Titling Rg', Arial, sans-serif;
-    -webkit-tap-highlight-color: #fff0
+    -webkit-tap-highlight-color: #fff0;
 }
 
 body {
@@ -2651,8 +2651,7 @@ body {
     padding-right: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    height: 100vh;
-    min-height: 100vh
+    min-height: 100vh;
 }
 
 :is(h1, h2, h3, h4, h5, h6) {

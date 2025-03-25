@@ -164,17 +164,17 @@
       color: #fff;
     }
     #loading {
-      position: fixed;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      opacity: 1;
-      background-color: #000000;
-      z-index: 999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #000000; /* Change to your preferred background */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.3s ease-out;
+        z-index: 999;
     }
     #loading span {
       position: relative;
@@ -967,8 +967,8 @@
       <div class="overlay-card"></div>
       <section class="section dark-background-overflow-hidden" id="counter-section">
         <div class="w-layout-blockcontainer base-container w-container">
-          <div data-aos="fade-up" data-aos-once="true" class="content-block">
-            <div class="big-text-about">
+          <div class="content-block">
+            <div class="big-text-about" data-aos="fade-up" data-aos-once="true" >
               Experience adrenaline-fueled action, star-studded races, 
               and the future of motorsport entertainment at Rush & Roar Show!
             </div>
@@ -1007,23 +1007,23 @@
         </div>
       </section>
       <footer id="footer"
-        class="pt-[40px] lg:pt-[100px] pb-[80px] min-h-[100svh] text-white relative z-[8] overflow-hidden">
+        class="pt-[40px] lg:pt-[100px] pb-[80px] text-white relative z-[8]">
         <div class="footer-stars">
           <!-- <img src="./images/stars.png" alt="Stars" /> -->
         </div>
         <div class="max-[320px]:px-[2rem] px-[2.875rem] lg:px-20 container-max">
-          <div class="flex flex-col justify-between min-h-[calc(100svh-200px)]">
+          <div class="flex flex-col justify-between">
             <div class="grid grid-cols-1 lg:grid-cols-2 w-full gap-12 lg:gap-24">
               <div class="flex flex-col gap-8 max-[448px] relative">
-                <h2 class="text-[28px] lg:text-5xl" data-aos="fade-up" data-aos-once="true">
+                <h2 class="text-[28px] lg:text-5xl">
                   <img src="./images/R-R-logo.webp" class="max-w-[300px]" />
                 </h2>
-                <p data-aos="fade-up" data-aos-once="true">
+                <p>
                   Whether you are a Sponsor, Exhibitor or Enthusiast,<br />
                   <b>RUSH & ROAR SHOW</b>
                   offers opportunities for everyone to shine.
                 </p>
-                <div class="space-y-3" data-aos="fade-up" data-aos-once="true">
+                <div class="space-y-3">
                   <p class="font-medium">Ways to Participate</p>
                   <ul style="max-width: 300px">
                     <li>
@@ -1040,8 +1040,8 @@
                     </li>
                   </ul>
                 </div>
-                <a data-aos="fade-up" data-aos-once="true" href="javascript:void(0)" class="form-open2 btn btn-primary text-[0.9rem] whitespace-nowrap btn-all flex lg:hidden !mx-0">Contact Us</a>
-                <div class="flex gap-4" data-aos="fade-up">
+                <a href="javascript:void(0)" class="form-open2 btn btn-primary text-[0.9rem] whitespace-nowrap btn-all flex lg:hidden !mx-0">Contact Us</a>
+                <div class="flex gap-4">
                   <a class="cursor-pointer" href="https://www.instagram.com/rushandroar?igsh=MXJ1bDRsaTQzN3E3cQ%3D%3D&utm_source=qr" target="_blank">
                     <i class="fab fa-instagram fa-2x"></i>
                   </a>
@@ -1049,7 +1049,7 @@
                     <i class="fab fa-threads fa-2x"></i>
                   </a>
                 </div>
-                <div class="manequin-img" data-aos="fade-up" data-aos-once="true">
+                <div class="manequin-img">
                   <img src="./images/manequin.png" alt="Manequin" />
                   <div class="stars-container">
                     <div class="star"></div>
@@ -1058,7 +1058,7 @@
                   </div>
                 </div>
               </div>
-              <div class="form-contact pb-10" id="formContainer" data-aos="fade-up" data-aos-once="true">
+              <div class="form-contact pb-10" id="formContainer">
                 <div class="modal-overlay" id="modalOverlay"></div>
                 <div class="form-wrapper">
                     <button class="close-modal" id="closeModal">&times;</button>
@@ -1176,22 +1176,44 @@
         </script>
       <script src="./js/vendor.js" type="text/javascript"></script>
       <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Show content after load
-            window.addEventListener('load', function() {
-                const loader = document.getElementById('loading');
-                const content = document.getElementById('content');
-                
-                // Fade out loader
-                loader.style.opacity = '0';
-                
-                // Show content after loader fade out
-                setTimeout(() => {
-                    loader.style.display = 'none';
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+        document.addEventListener('DOMContentLoaded', function () {
+            const content = document.getElementById('content');
+            const loader = document.getElementById('loading');
+            if (content) {
+                content.style.opacity = '0';
+                content.style.visibility = 'hidden';
+            }
+            if (loader) {
+                loader.style.display = 'flex';
+                loader.style.opacity = '1';
+            }
+        });
+        window.addEventListener('load', function () {
+            const loader = document.getElementById('loading');
+            const content = document.getElementById('content');
+            setTimeout(() => {
+                window.scrollTo(0, 0);
+                document.documentElement.scrollTop = 0;
+                document.body.scrollTop = 0;
+            }, 10);
+            setTimeout(() => {
+                if (loader) {
+                    loader.style.opacity = '0';
+                    setTimeout(() => {
+                        loader.style.display = 'none';
+                    }, 30);
+                }
+                if (content) {
                     content.style.opacity = '1';
                     content.style.visibility = 'visible';
-                }, 50); // Match transition duration
-            });
+                }
+            }, 50);
+        });
+        window.addEventListener('beforeunload', function () {
+            window.scrollTo(0, 0);
         });
         const heading = document.querySelector('.text-black-outline');
         function updateFill() {
@@ -1226,7 +1248,6 @@
         updateFill();
       </script>
       <script>
-        // Mobile form handling
         const formContainer = document.getElementById('formContainer');
         const modalOverlay = document.getElementById('modalOverlay');
         const mobileTrigger = document.querySelector('.mobile-form-trigger');
@@ -1247,7 +1268,6 @@
         if (formOpen2) {
           formOpen2.addEventListener('click', toggleModal);
         }
-        // Handle window resize
         window.addEventListener('resize', () => {
             if (window.innerWidth > 1025) {
                 formContainer.style.display = 'block';
@@ -1263,14 +1283,9 @@
       button.addEventListener('click', (e) => {
         const parentItem = e.target.closest('.list-items-wrap-item');
         const textElement = parentItem.querySelector('.font-desktop');
-        
         parentItem.classList.toggle('active');
-        
-        // Toggle button text
         const isExpanded = parentItem.classList.contains('active');
         e.target.textContent = isExpanded ? 'Read less' : 'Read more';
-        
-        // Optional: Collapse other items when opening one
         if(isExpanded) {
           document.querySelectorAll('.list-items-wrap-item').forEach(item => {
             if(item !== parentItem) {

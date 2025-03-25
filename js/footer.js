@@ -7,15 +7,8 @@ let bgFooterMobile =
 let bgFooterDesktop =
   "radial-gradient(70% 80% at 100% 100%, rgba(175, 62, 12, 0.8) 0%, rgba(175, 62, 12, 0.68) 24%, rgba(175, 62, 12, 0.43) 54.5%, rgba(175, 62, 12, 0.21) 72.5%, rgba(175, 62, 12, 0) 100%), rgb(19, 42, 72)";
 
-// mm.add("(max-width: 1279.98px)", () => {
-//   gsap.set("footer", {
-//     background: bgFooterMobile,
-//   });
-// });
-
-// mm.add("(min-width: 1280px)", () => {
 mm.add(mediaConditions, (context) => {
-  let { isMobile, isMedium, isLarge, isExtraLarge, isXXL } = context.conditions;
+  let { isMobile } = context.conditions;
   gsap
     .timeline({
       scrollTrigger: {
@@ -23,7 +16,6 @@ mm.add(mediaConditions, (context) => {
         start: "top center",
         end: "+=500",
         scrub: 2,
-        // markers: true,
       },
     })
     .fromTo(
@@ -39,67 +31,3 @@ mm.add(mediaConditions, (context) => {
       "<"
     );
 });
-// });
-gsap
-  .timeline({
-    scrollTrigger: {
-      trigger: ".wrap-feature-m",
-      start: "top center",
-      end: "+=500",
-      scrub: 2,
-      // markers: true,
-    },
-  });
-  // .fromTo(
-  //   ".wrap-feature-m",
-  //   {
-  //     duration: 2,
-  //     background: bgFooterFrom,
-  //   },
-  //   {
-  //     duration: 2,
-  //     background: bgFooterDesktop,
-  //   },
-  //   "<"
-  // );
-gsap
-  .timeline({
-    scrollTrigger: {
-      trigger: "footer",
-      start: "top top",
-      end: "top top",
-      scrub: 0,
-    },
-  })
-  .fromTo(
-    "header .link-underline",
-    {
-      color: "#000",
-    },
-    {
-      color: "#fff",
-    },
-    "<"
-  )
-  .fromTo(
-    ".menu-mobile ,.item-menu path",
-    {
-      color: "#000",
-      fill: "#000",
-    },
-    {
-      color: "#fff",
-      fill: "#fff",
-    },
-    "<"
-  )
-  .fromTo(
-    "header .logo-svg path",
-    {
-      fill: "#000",
-    },
-    {
-      fill: "#fff",
-    },
-    "<"
-  );
