@@ -96,10 +96,10 @@ img {
         transform: translateZ(0)
     }
 }
-#content {
+/* #content {
     opacity: 0;
     visibility: hidden;
-}
+} */
 .carousel-item {
     position: relative;
     display: none;
